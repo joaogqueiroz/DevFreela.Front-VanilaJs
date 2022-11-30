@@ -1,3 +1,5 @@
 html{
-  background-color: var(--devf-color-gray-lighter);
+  background-color: var(--df-color-gray-lighter);
+  font-family: var(--df-font-family-base);
+  font-weight: 500;
 }

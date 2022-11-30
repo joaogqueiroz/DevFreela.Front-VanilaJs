@@ -1,0 +1,17 @@
+.df-button{
+  font-family: var(--df-font-family-base);
+  background-color: var(--df-color-primary);
+  font-size: calc(var(--df-font-size-base) + 8px);
+  color: white;
+  font-weight: 800;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.df-button:hover{
+  background-color: var(--df-color-primary-light);
+
+}

@@ -1,9 +1,9 @@
 :root{
-  --devf-color-primary: #0041BE ;
-  --devf-color-danger: #FF2222 ;
-  --devf-color-gray-lighter: #F9FBFD ;
-  --devf-color-gray-light: #B8B7B7 ;
-  --devf-color-gray: #767684 ;
-  --devf-color-gray-dark: #09090A ;
-
+  --df-color-primary-light: #004cd8 ;
+  --df-color-primary: #0041BE ;
+  --df-color-danger: #FF2222 ;
+  --df-color-gray-lighter: #F9FBFD ;
+  --df-color-gray-light: #B8B7B7 ;
+  --df-color-gray: #767684 ;
+  --df-color-gray-dark: #09090A ;
 }

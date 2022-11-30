@@ -1,49 +1,41 @@
-.devf-login>.devf-wrapper{
-  max-width: var(--devf-main-wrapper);
+.df-login>.df-wrapper>.main-content>.left {
+  max-width: 450px;
   margin: 0 auto;
 }
 
-.devf-login > .devf-wrapper > .devf-header{
-  height: var(--devf-header-size);
-  width: 100%;
-  background: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-.devf-login > .devf-wrapper > .devf-header> .wrapper{
-  max-width: var(--devf-main-wrapper);
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.devf-login > .devf-wrapper > .devf-header> .wrapper > .image-wrapper{
-  height: var(--devf-header-size);
-  padding: 16px 0;
+.df-login>.df-wrapper>.main-content>.left>.radio-buttons {
+  margin-bottom: 42px;
 }
 
-.devf-login > .devf-wrapper > .devf-header> .wrapper > .image-wrapper > .image{
-  height: 100%;
+.df-login>.df-wrapper>.main-content>.left>.radio-buttons>.title {
+  font-size: calc(var(--df-font-size-base) + 8px);
+  font-weight: 800;
+  margin-bottom: 16px;
 }
-.devf-login > .devf-wrapper > .main-content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: var(--devf-header-size);
+
+.df-login>.df-wrapper>.main-content>.left>.radio-buttons>.buttons>.df-radio {
+  margin-right: 70px;
 }
-.devf-login > .devf-wrapper > .main-content > .left{
-  padding-top: 48px;
+
+.df-login>.df-wrapper>.main-content>.left>.main-title {
+  font-weight: 800;
+  margin-bottom: 40px;
 }
-.devf-login > .devf-wrapper > .main-content > .right{
-overflow: hidden;
-position: relative;
-height: 100vh;
+
+.df-login>.df-wrapper>.main-content>.left>.main-title>.up {
+  font-size: calc(var(--df-font-size-base) + 38px);
+  display: block;
+  margin-bottom: 7px;
 }
-.devf-login > .devf-wrapper > .main-content > .right> .image{
-  position: absolute;
-  height: 100%;
-  min-width: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+
+.df-login>.df-wrapper>.main-content>.left>.main-title>.down {
+  font-size: calc(var(--df-font-size-base) + 22px);
+}
+
+.df-login>.df-wrapper>.main-content>.left>.steps {
+  display: block;
+  font-weight: 800;
+  font-size: calc(var(--df-font-size-base) + 4px);
+  color: var(--df-color-gray);
+  margin-bottom: 13px;
 }

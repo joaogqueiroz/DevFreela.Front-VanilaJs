@@ -1,0 +1,23 @@
+.df-header{
+  height: var(--df-header-size);
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.df-header >.wrapper{
+  max-width: var(--df-main-wrapper);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.df-header> .wrapper >.image-wrapper{
+  height: var(--df-header-size);
+  padding: 16px 0;
+}
+.df-header> .wrapper >.image-wrapper >.image{
+  height: 100%;
+}
