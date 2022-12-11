@@ -1,19 +1,29 @@
-.df-login>.df-wrapper{
+.df-wrapper{
   max-width: var(--df-main-wrapper);
   margin: 0 auto;
 }
 .df-wrapper >.main-content{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: var(--df-header-size);
 }
-.df-wrapper >.main-content >.left{
-  padding-top: 48px;
+.df-wrapper >.main-content.-one-col{
+  grid-template-columns: 1fr;
 }
+.df-wrapper >.main-content >.back-btn{
+  position: fixed;
+  top: calc(var(--df-header-size) + 38px);
+  font-size: calc(var(--df-font-size-base) + 50px);
+  cursor: pointer;
+  color: var(--df-color-gray-dark);
+  text-decoration: none;
+}
+
 .df-wrapper >.main-content >.right{
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: calc(100vh - var(--df-header-size));
 }
 .df-wrapper >.main-content >.right> .image{
   position: absolute;

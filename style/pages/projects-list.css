@@ -1,0 +1,20 @@
+.df-projects-list>.df-wrapper>.main-content>.title-button {
+margin-top: 70px;
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.df-projects-list>.df-wrapper>.main-content>.title-button>.title {
+    font-size: calc(var(--df-font-size-base) + 30px);
+    font-weight: 700;
+
+}
+
+.df-projects-list>.df-wrapper>.main-content>.title-button>.button-wrapper {
+
+}
+
+.df-projects-list>.df-wrapper>.main-content> .table-wrapper{
+ margin-top: 32px;
+}
