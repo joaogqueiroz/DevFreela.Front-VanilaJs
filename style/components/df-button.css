@@ -11,6 +11,12 @@
   cursor: pointer;
   transition: background-color 0.5s;
 }
+.df-button.-small{
+  padding: 12px 27px;
+  font-size: calc(var(--df-font-size-base) + 4px);
+  font-weight: 600;
+
+}
 .df-button:hover{
   background-color: var(--df-color-primary-light);
 

@@ -1,0 +1,15 @@
+.df-create>.df-wrapper>.main-content>.left{
+    max-width: 368px;
+    margin: auto;
+
+}
+.df-create>.df-wrapper>.main-content>.left>.main-title {
+    font-size: calc(var(--df-font-size-base) + 32px);
+    font-weight: 800;
+    max-width: 415px;
+    margin-bottom: 40px;
+}
+
+.df-create>.df-wrapper>.main-content>.left>.df-button {
+    margin-top: 40px;
+}
