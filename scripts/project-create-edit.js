@@ -30,6 +30,7 @@ function registerOrEdit() {
     }
 
     //calling api
+    
 
     fetch(`https://localhost:7282/api/projects${screenType === 'edit' ? ('/' + params.id) : '' }`, {
         method: screenType === 'edit' ? 'PUT' : 'POST',
