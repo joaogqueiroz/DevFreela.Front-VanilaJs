@@ -30,12 +30,16 @@
   <link rel="stylesheet" href="style/components/df-input.css" />
   <link rel="stylesheet" href="style/components/df-header.css" />
   <!--pages-->
-  <link rel="stylesheet" href="style/pages/create.css" />
+  <link rel="stylesheet" href="style/pages/project-create-edit.css" />
   <!--trumps-->
+  
+  <!--scripts-->
+  <script src="scripts/project-create-edit.js"></script>
+  
 </head>
 
 <body>
-  <div class="df-create">
+  <div class="df-project-create-edit">
     <div class="df-wrapper">
       <header class="df-header">
         <div class="wrapper">
@@ -46,16 +50,15 @@
       </header>
       <main class="main-content">
         <a class="back-btn material-icons" href="projects-list.html">keyboard_arrow_left</a>
-        <div class="left">
-          <h1 class="main-title">
-            Vamos cadastrar seu novo projeto!
+        <form class="left" onsubmit="registerOrEdit()" action="javascript:void(0)">
+          <h1 class="main-title" id="main-title">
           </h1>
-          <input type="text" class="df-input" placeholder="Título" />
-          <input type="text" class="df-input" placeholder="Custo total" />
-          <textarea type="text" class="df-input" placeholder="Descrição"></textarea>
+          <input required class="df-input" id="title" placeholder="Título" />
+          <input required class="df-input" id="totalCost" placeholder="Custo total" />
+          <textarea required class="df-input" id="description" placeholder="Descrição"></textarea>
 
-          <button class="df-button">Cadastrar</button>
-        </div>
+          <button type="submit" class="df-button" id="action-button"></button>
+        </form>
         <div class="right">
           <img class="image" src="assets/image/bg-float-cubes.png"
             alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco-iris" />

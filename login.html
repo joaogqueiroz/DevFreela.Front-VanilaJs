@@ -31,6 +31,10 @@
   <!--pages-->
   <link rel="stylesheet" href="style/pages/login.css" />
   <!--trumps-->
+
+  <!--scripts-->
+  <script src="scripts/login.js"></script>
+
 </head>
 
 <body>
@@ -44,8 +48,7 @@
         </div>
       </header>
       <main class="main-content">
-        <div class="left">
-          <span class="steps">PASSO 1 DE 2</span>
+        <form class="left" onsubmit="register()" action="javascript:void(0)">
           <h1 class="main-title">
             <span class="up">Olá!</span>
             <span class="down">Vamos criar seu cadastro.</span>
@@ -54,23 +57,24 @@
             <h3 class="title">Qual o seu perfil?</h3>
             <div class="buttons">
               <label class="df-radio">
-                Dev
-                <input name="cargo" type="radio" />
+                Freelancer
+                <input name="role" type="radio" />
                 <span class="checkmark"></span>
               </label>
               <label class="df-radio">
                 Cliente
-                <input name="cargo" type="radio" />
+                <input name="role" type="radio" />
                 <span class="checkmark"></span>
               </label>
             </div>
           </div>
-          <input type="text" class="df-input" placeholder="Nome completo" />
-          <input type="date" class="df-input" placeholder="Data de nascimento" />
-          <input type="email" class="df-input" placeholder="Email" />
-          <input type="password" class="df-input" placeholder="Senha" />
-          <button class="df-button">Continuar</button>
-        </div>
+          <input required id="fullName" class="df-input" placeholder="Nome completo" />
+          <input required id="birthDate" type="date" class="df-input" placeholder="Data de nascimento" />
+          <input required id="email" type="email" class="df-input" placeholder="Email" />
+          <input required id="password" type="password" class="df-input" placeholder="Senha" />
+
+          <button type="submit" class="df-button">Continuar</button>
+        </form>
         <div class="right">
           <img class="image" src="assets/image/bg-cubes.png"
             alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco-iris" />
