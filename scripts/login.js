@@ -39,7 +39,12 @@ function register(){
     })
     .then(response => response.json())
     .then(response => {
-        alert('Cadastrado com sucesso!');
+        localStorage.setItem("userName", response.fullName);
+        localStorage.setItem("userRole", response.role === "freelancer" ? "Desenvolvedor" : "Cliente");
+        localStorage.setItem("idClient", response.id);
+
+        // redirect
+        window.location.href = "list.html"
     })
     .catch(error => {
 

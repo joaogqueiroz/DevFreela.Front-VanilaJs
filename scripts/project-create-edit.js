@@ -5,6 +5,21 @@ const screenType = params.id ? 'edit' : 'create';
 
 window.onload = function () {
     setScreenType();
+    fillInputs();
+}
+
+function fillInputs(){
+    if(screenType === 'edit')
+    {
+        fetch(`https://localhost:7282/api/projects/${params.id}`)
+        .then(response => response.json())
+        .then(project => {
+            console.log(project);
+            document.querySelector('#title').value = project.title;
+            document.querySelector('#totalCoast').value = project.totalCoast;
+            document.querySelector('#description').value = project.description;
+        })
+    }
 }
 
 function setScreenType() {
@@ -24,9 +39,9 @@ function registerOrEdit() {
     let payload = {
         id: params.id,
         title: document.querySelector("#title").value,
-        totalCost: document.querySelector("#totalCost").value,
+        totalCoast: document.querySelector("#totalCoast").value,
         description: document.querySelector("#description").value,
-        idClient: 1
+        idClient: localStorage.getItem("idClient")
     }
 
     //calling api
@@ -45,6 +60,7 @@ function registerOrEdit() {
         .then(response => {
             if (screenType === 'edit') {
                 alert('Atualizado com sucesso!');
+                window.location.href = "list.html"
             } else{
                 alert('Cadastrado com sucesso!');
             }
